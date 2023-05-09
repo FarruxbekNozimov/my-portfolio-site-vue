@@ -1,0 +1,28 @@
+<script setup>
+import { aboutMe } from "../constants/aboutMe";
+import Button from "../UI/Button.vue";
+</script>
+
+<template>
+	<div>
+		<div class="flex p-10 justify-evenly items-center">
+			<div class="w-[40%]">
+				<h2 class="text-5xl my-5">
+					Hi, I am {{ aboutMe.name }}
+					<span class="text-blue-600">{{ aboutMe.job }}</span>
+				</h2>
+				<p class="text-lg">
+					{{ aboutMe.description }}
+				</p>
+				<Button />
+			</div>
+			<div class="w-[40%]">
+				<img
+					src="https://st4.depositphotos.com/3881799/27242/i/600/depositphotos_272424264-stock-photo-hacker-working-laptop-dark.jpg"
+					alt=""
+					class="mx-auto rounded-2xl border-2 border-blue-600 h-[400px] w-[400px] object-cover" />
+			</div>
+		</div>
+	</div>
+</template>
+<style></style>
