@@ -5,7 +5,7 @@ import Button from "../UI/Button.vue";
 
 <template>
 	<div>
-		<div class="flex p-10 justify-evenly items-center">
+		<div class="flex justify-evenly items-center">
 			<div class="w-[40%]">
 				<h2 class="text-5xl my-5">
 					Hi, I am {{ aboutMe.name }}

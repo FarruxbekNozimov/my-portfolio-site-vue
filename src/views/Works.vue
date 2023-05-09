@@ -1,6 +1,6 @@
 <script></script>
 <template lang="">
-	<div class="bg-black">
+	<div>
 		<h1>asdflkjlsakdfalsjk</h1>
 	</div>
 </template>

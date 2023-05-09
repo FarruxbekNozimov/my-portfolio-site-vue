@@ -1,12 +1,12 @@
 <script setup>
 import Header from "./components/Header.vue";
 </script>
-<template lang="">
-	<div class="bg-[#222] text-white h-[100vh] flex">
+<template>
+	<div>
 		<Header />
-		<div class="p-5 ml-[270px] w-[100%] h-[100%] mx-auto">
+		<div class="w-full px-10 py-10">
 			<router-view></router-view>
 		</div>
 	</div>
 </template>
-<style lang=""></style>
+<style></style>
