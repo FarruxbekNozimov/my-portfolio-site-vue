@@ -1,5 +1,11 @@
 export const works = [
 	{
+		id: 0,
+		title: "MegaCRM Project VUEJS",
+		path: "https://courses-farruxdev.netlify.app",
+		img: "9.png",
+	},
+	{
 		id: 1,
 		title: "Courses simple website",
 		path: "https://courses-farruxdev.netlify.app",

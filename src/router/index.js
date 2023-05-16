@@ -10,8 +10,18 @@ const router = createRouter({
 		},
 		{
 			path: "/works",
-			name: "works",
+			name: "Works",
 			component: () => import("../views/Works.vue"),
+		},
+		{
+			path: "/blog",
+			name: "Blog",
+			component: () => import("../views/Works.vue"),
+		},
+		{
+			path: "/contact",
+			name: "Contact",
+			component: () => import("../views/Contact.vue"),
 		},
 	],
 });

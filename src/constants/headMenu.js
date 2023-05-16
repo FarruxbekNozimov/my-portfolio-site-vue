@@ -4,10 +4,6 @@ export const menus = [
 		path: "/",
 	},
 	{
-		title: "About",
-		path: "/about",
-	},
-	{
 		title: "Works",
 		path: "/works",
 	},

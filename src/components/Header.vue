@@ -5,7 +5,7 @@ import { menus } from "../constants/headMenu.js";
 	<div>
 		<!-- component -->
 		<header
-			class="dark:bg-slate-950 header sticky top-0 flex items-center justify-between px-8 h-[70px] dark:text-white border-b border-b-zinc-400">
+			class="dark:bg-slate-950 header sticky top-0 flex items-center justify-between px-8 h-[70px] dark:text-white border-b border-b-cyan-500">
 			<!-- logo -->
 			<h1 class="w-3/12">
 				<a href="/" class="text-2xl font-serif italic"> FarruxDEV </a>

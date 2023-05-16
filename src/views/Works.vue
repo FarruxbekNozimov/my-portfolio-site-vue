@@ -4,11 +4,14 @@ import { works } from "../constants/works";
 <template>
 	<div class="flex flex-wrap justify-center gap-5">
 		<a
-			_target="_blank"
+			target="_blank"
 			v-for="work in works"
 			:href="work.path"
 			class="min-h-[350px] max-w-sm p-3 bg-cyan-500 dark:bg-opacity-30 backdrop-blur-lg rounded-xl drop-shadow-md text-center border-2 dark:border-slate-900">
-			<img :src="`/src/assets/img/${work.img}`" class="rounded-2xl" alt="" />
+			<img
+				:src="`https://upcdn.io/12a1yEX/raw/portfolio/${work.img}`"
+				class="rounded-xl"
+				alt="" />
 			<h2
 				class="text-xl font-mono text-center p-4 dark:bg-cyan-400 bg-cyan-700 text-white dark:bg-opacity-50 backdrop-blur-lg rounded-lg border border-cyan-500 shadow-lg drop-shadow-lg my-5">
 				{{ work.title }}
