@@ -25,7 +25,7 @@ export const works = [
 	},
 	{
 		id: 5,
-		title: "JS Code Editor",
+		title: "Simple Javascript Code Editor",
 		path: "https://jscodeditor.netlify.app/",
 		img: "8.png",
 	},

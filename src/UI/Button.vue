@@ -1,7 +1,10 @@
+<script></script>
 <template lang="">
 	<div>
-		<button>Download CV</button>
+		<button
+			class="hover:bg-cyan-500 bg-cyan-400 font-semibold text-red-600 px-3 py-2 rounded-md">
+			Download CV
+		</button>
 	</div>
 </template>
-<script></script>
 <style lang=""></style>

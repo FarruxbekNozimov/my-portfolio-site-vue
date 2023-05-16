@@ -7,22 +7,22 @@ import Button from "../UI/Button.vue";
 	<div>
 		<div class="flex justify-evenly items-center">
 			<div class="w-[40%]">
-				<h2 class="text-5xl my-5">
+				<h2 class="text-5xl my-5 dark:text-slate-200">
 					Hi, I am {{ aboutMe.name }}
-					<span class="text-green-600 typing-demo text-3xl">{{
+					<span class="dark:text-cyan-500 text-cyan-600 typing-demo text-3xl">{{
 						aboutMe.job
 					}}</span>
 				</h2>
-				<p class="text-lg">
+				<p class="dark:text-slate-400 text-lg">
 					{{ aboutMe.description }}
 				</p>
-				<Button />
+				<Button class="mt-5" />
 			</div>
 			<div class="w-[40%]">
 				<img
 					src="https://st4.depositphotos.com/3881799/27242/i/600/depositphotos_272424264-stock-photo-hacker-working-laptop-dark.jpg"
 					alt=""
-					class="mx-auto rounded-2xl border-2 border-green-600 h-[400px] w-[400px] object-cover" />
+					class="mx-auto rounded-2xl border-2 border-cyan-600 h-[400px] w-[400px] object-cover" />
 			</div>
 		</div>
 	</div>

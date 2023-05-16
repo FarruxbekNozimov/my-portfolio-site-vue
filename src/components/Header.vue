@@ -5,7 +5,7 @@ import { menus } from "../constants/headMenu.js";
 	<div>
 		<!-- component -->
 		<header
-			class="header sticky top-0 bg-white shadow-md flex items-center justify-between px-8 py-02">
+			class="dark:bg-slate-950 header sticky top-0 flex items-center justify-between px-8 h-[70px] dark:text-white border-b border-b-zinc-400">
 			<!-- logo -->
 			<h1 class="w-3/12">
 				<a href="/" class="text-2xl font-serif italic"> FarruxDEV </a>
@@ -17,7 +17,7 @@ import { menus } from "../constants/headMenu.js";
 					<router-link
 						v-for="nav in menus"
 						:to="nav.path"
-						class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+						class="px-6 py-3 mx-2 border-b-2 border-cyan-500 border-opacity-0 hover:border-opacity-100 hover:text-cyan-400 duration-200 cursor-pointer active">
 						<a>{{ nav.title }}</a>
 					</router-link>
 				</ul>
@@ -41,32 +41,17 @@ import { menus } from "../constants/headMenu.js";
 							class=""></path>
 					</svg>
 				</a>
-				<a href="">
-					<svg
-						class="h-8 p-1 hover:text-green-500 duration-200 svg-inline--fa fa-shopping-cart fa-w-18 fa-7x"
-						aria-hidden="true"
-						focusable="false"
-						data-prefix="far"
-						data-icon="shopping-cart"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 576 512">
-						<path
-							fill="currentColor"
-							d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"
-							class=""></path>
-					</svg>
-				</a>
 			</div>
 		</header>
 	</div>
 </template>
 <style>
 .router-link-active {
-	background: rgba(5, 163, 5, 0.6);
-	color: white;
+	background: rgb(6 182 212);
+	border-radius: 10px;
+	color: black;
 }
 .router-link-active:hover {
-	color: white;
+	color: black;
 }
 </style>
