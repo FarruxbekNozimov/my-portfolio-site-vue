@@ -35,13 +35,13 @@ import { skills } from "../constants/skill";
 			<div class="flex flex-wrap justify-center gap-10">
 				<div v-for="(skill, key) in skills" class="w-[45%]">
 					<h2
-						class="text-center capitalize text-2xl dark:text-cyan-300 text-cyan-700">
+						class="text-center uppercase text-2xl dark:text-cyan-300 text-cyan-950">
 						{{ key }}
 					</h2>
 					<div v-for="el in skill" class="mt-8">
 						<div class="flex justify-between mb-1">
 							<span
-								class="text-base font-medium text-blue-700 dark:text-white flex items-center justify-center gap-2 px-2">
+								class="text-base font-medium text-cyan-950 dark:text-white flex items-center justify-center gap-2 px-2">
 								<i class="text-xl" :class="el.icon"></i>
 								{{ el.name }}</span
 							>
@@ -49,8 +49,7 @@ import { skills } from "../constants/skill";
 								>{{ el.number }}%</span
 							>
 						</div>
-						<div
-							class="w-full bg-slate-950 rounded-full h-2.5 dark:bg-gray-700">
+						<div class="w-full bg-cyan-950 rounded-full h-2.5 dark:bg-gray-700">
 							<div
 								class="bg-cyan-600 h-2.5 rounded-full"
 								:style="`width: ${el.number}%`"></div>

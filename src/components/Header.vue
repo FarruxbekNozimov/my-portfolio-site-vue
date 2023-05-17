@@ -2,11 +2,10 @@
 import { menus } from "../constants/headMenu.js";
 import { ref } from "vue";
 
-console.log(localStorage.getItem("mode"));
-const mode = ref(localStorage.getItem("mode") || true);
+const mode = ref(localStorage.getItem("mode") || "dark");
 
-const toggleMode = (e) => {
-	mode.value = !mode.value;
+const toggleMode = () => {
+	mode.value = mode.value == "dark" ? "light" : "dark";
 	localStorage.setItem("mode", mode.value);
 };
 </script>
@@ -14,7 +13,7 @@ const toggleMode = (e) => {
 	<div>
 		<!-- component -->
 		<header
-			class="dark:bg-slate-950 header sticky top-0 flex items-center justify-between px-8 h-[70px] dark:text-white border-b border-b-cyan-500">
+			class="dark:bg-slate-950 bg-teal-300 header sticky top-0 flex items-center justify-between px-8 h-[70px] dark:text-white border-b border-b-cyan-700">
 			<!-- logo -->
 			<h1 class="w-3/12">
 				<a href="/" class="text-2xl font-serif italic"> FarruxDEV </a>
@@ -26,7 +25,7 @@ const toggleMode = (e) => {
 					<router-link
 						v-for="nav in menus"
 						:to="nav.path"
-						class="px-6 py-3 mx-2 border-b-2 border-cyan-500 border-opacity-0 hover:border-opacity-100 hover:text-cyan-400 duration-200 cursor-pointer active">
+						class="px-6 py-3 mx-2 border-b-2 border-cyan-500 border-opacity-0 hover:border-opacity-100 hover:text-cyan-950 dark:hover:text-cyan-400 duration-200 cursor-pointer active">
 						<a>{{ nav.title }}</a>
 					</router-link>
 				</ul>
@@ -35,7 +34,7 @@ const toggleMode = (e) => {
 			<!-- buttons --->
 			<div class="w-3/12 flex justify-end">
 				<i
-					:class="mode ? 'bx-moon' : 'bx-sun'"
+					:class="mode == 'dark' ? 'bx-moon' : 'bx-sun'"
 					@click="toggleMode"
 					class="bx text-3xl cursor-pointer"></i>
 			</div>
@@ -49,6 +48,6 @@ const toggleMode = (e) => {
 	color: black;
 }
 .router-link-active:hover {
-	color: black;
+	color: black !important;
 }
 </style>

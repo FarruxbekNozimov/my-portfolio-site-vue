@@ -10,10 +10,12 @@ import { works } from "../constants/works";
 				:src="`https://upcdn.io/12a1yEX/raw/portfolio/${work.img}`"
 				class="rounded-xl"
 				alt="" />
-			<h2
-				class="text-xl font-mono text-center p-4 dark:bg-cyan-400 bg-cyan-700 text-white dark:bg-opacity-50 backdrop-blur-lg rounded-lg border border-cyan-500 shadow-lg drop-shadow-lg my-5">
-				{{ work.title }}
-			</h2>
+			<div class="h-[100px]">
+				<h2
+					class="text-xl font-mono text-center p-4 dark:bg-cyan-400 bg-cyan-700 text-white dark:bg-opacity-50 backdrop-blur-lg rounded-lg border border-cyan-500 shadow-lg drop-shadow-lg my-5">
+					{{ work.title }}
+				</h2>
+			</div>
 
 			<div class="flex gap-5">
 				<a
