@@ -2,8 +2,9 @@ export const works = [
 	{
 		id: 0,
 		title: "MegaCRM Project VUEJS",
-		path: "https://courses-farruxdev.netlify.app",
+		path: "https://megacrm.netlify.app/",
 		img: "9.png",
+		demo: "",
 	},
 	{
 		id: 1,

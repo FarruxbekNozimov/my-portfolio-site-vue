@@ -7,27 +7,27 @@ export const skills = {
 		},
 		{
 			name: "TypeScript",
-			number: 80,
+			number: 85,
 			icon: "bx bxl-typescript",
 		},
 		{
 			name: "MongoDB",
-			number: 75,
+			number: 80,
 			icon: "bx bxl-mongodb",
 		},
 		{
 			name: "PostgreSQL",
-			number: 70,
+			number: 80,
 			icon: "bx bxl-postgresql",
 		},
 		{
-			name: "PHP",
-			number: 60,
-			icon: "bx bxl-php",
+			name: "Data Structure",
+			number: 75,
+			icon: "bx bxs-data",
 		},
 		{
 			name: "Laravel",
-			number: 40,
+			number: 60,
 			icon: "bx bxl-php",
 		},
 	],
@@ -63,16 +63,38 @@ export const skills = {
 			icon: "bx bxl-react",
 		},
 	],
-	others: [
+	languages: [
 		{
 			name: "Python",
 			number: 90,
-			icon: "bx bxl-react",
+			icon: "bx bxl-python",
 		},
 		{
 			name: "C lang",
+			number: 90,
+			icon: "bx bxl-slack-old",
+		},
+		{
+			name: "Javascript",
+			number: 90,
+			icon: "bx bxl-javascript",
+		},
+		{
+			name: "PHP",
 			number: 85,
-			icon: "bx bxl-react",
+			icon: "bx bxl-php",
+		},
+		{
+			name: "English",
+			number: 75,
+			icon: "bx bxs-flag-alt",
+		},
+	],
+	others: [
+		{
+			name: "Linux",
+			number: 90,
+			icon: "bx bxs-terminal",
 		},
 		{
 			name: "Git",
@@ -88,6 +110,11 @@ export const skills = {
 			name: "Gitlab",
 			number: 85,
 			icon: "bx bxl-gitlab",
+		},
+		{
+			name: "Searching",
+			number: 80,
+			icon: "bx bx-search-alt",
 		},
 	],
 };

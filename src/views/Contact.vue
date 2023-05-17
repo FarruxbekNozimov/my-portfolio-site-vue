@@ -2,11 +2,7 @@
 <template>
 	<div>
 		<section class="bg-white dark:bg-slate-900">
-			<div class="px-4 mx-auto max-w-screen-md">
-				<h2
-					class="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-cyan-500">
-					Contact
-				</h2>
+			<div class="px-4 py-10 mx-auto max-w-screen-md">
 				<form action="#" class="space-y-8">
 					<div>
 						<label
@@ -38,7 +34,7 @@
 						<button
 							type="submit"
 							class="py-3 px-5 text-md font-medium text-center text-white rounded-lg bg-cyan-700 sm:w-fit hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">
-							Send message
+							Send your message
 						</button>
 					</div>
 				</form>
